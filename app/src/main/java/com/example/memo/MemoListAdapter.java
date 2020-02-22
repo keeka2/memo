@@ -51,17 +51,17 @@ public class MemoListAdapter extends BaseAdapter {
 
         String Body=dataList.get(position).getMember_Body();
         String Title = dataList.get(position).getMember_Title();
-        //제목 길이가 30자 이상이면 뒤에 글자들을 ...으로 바꿈
-        if(Title.length()>30){
-            Title = Title.substring(0,30)+"...";
+        //제목 길이가 20자 이상이면 뒤에 글자들을 ...으로 바꿈
+        if(Title.length()>20){
+            Title = Title.substring(0,20)+"...";
             title.setText(Title);
         }else{
             title.setText(Title);
         }
 
-        //내용 길이가 60자 이상이면 뒤에 글자들을 ...으로 바꿈
-        if(Body.length()>60){
-            Body = Body.substring(0,60)+"...";
+        //내용 길이가 35자 이상이면 뒤에 글자들을 ...으로 바꿈
+        if(Body.length()>35){
+            Body = Body.substring(0,35)+"...";
             body.setText(Body);
         }else{
             body.setText(Body);
