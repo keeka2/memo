@@ -1,1 +1,2 @@
-memo_programmers
+안드로이드 메모장 만들기 연습
+//내부db사용
